@@ -77,7 +77,7 @@ public:
 	 * \brief setThreadCount
 	 * \param num
 	 */
-	void setThreadCount(uint num);
+	void setThreadCount(unsigned int num);
 	/*!
 	 * \brief setYuvImage
 	 * \param image

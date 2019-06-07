@@ -119,7 +119,7 @@ libyuv_t::setupFileQueue()
 }
 
 void
-libyuv_t::setThreadCount(uint num)
+libyuv_t::setThreadCount(unsigned int num)
 {
 	if (num > 24) {
 		num = 0;

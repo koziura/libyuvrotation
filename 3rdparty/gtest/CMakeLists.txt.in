@@ -4,10 +4,11 @@ project(googletest-pack NONE)
 
 include(ExternalProject)
 ExternalProject_Add(googletest
-  URL ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/gtest/pack/gtest.tar.gz
+  URL ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/gtest/pack/gtest.zip
   SOURCE_DIR        "${CMAKE_CURRENT_BINARY_DIR}/googletest-src"
   BINARY_DIR        "${CMAKE_CURRENT_BINARY_DIR}/googletest-build"
   CONFIGURE_COMMAND ""
+#  CMAKE_ARGS "${CMAKE_ARGS};-DCMAKE_BUILD_TYPE=Release"
   BUILD_COMMAND     ""
   INSTALL_COMMAND   ""
   TEST_COMMAND      ""
