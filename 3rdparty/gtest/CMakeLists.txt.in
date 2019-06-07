@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 2.8)
+
+project(googletest-pack NONE)
+
+include(ExternalProject)
+ExternalProject_Add(googletest
+  URL ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/gtest/pack/gtest.tar.gz
+  SOURCE_DIR        "${CMAKE_CURRENT_BINARY_DIR}/googletest-src"
+  BINARY_DIR        "${CMAKE_CURRENT_BINARY_DIR}/googletest-build"
+  CONFIGURE_COMMAND ""
+  BUILD_COMMAND     ""
+  INSTALL_COMMAND   ""
+  TEST_COMMAND      ""
+)
+
